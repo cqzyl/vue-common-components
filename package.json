@@ -2,7 +2,7 @@
   "name": "vue-common-components",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "default": "src/components/index.ts",
   "scripts": {
     "serve": "parcel ./test/index.html --dist-dir .parcel-cache"
   },
