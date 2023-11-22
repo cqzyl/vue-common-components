@@ -5,9 +5,12 @@
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "source": "src/main.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "serve": "parcel ./test/index.html --dist-dir .parcel-cache",
-    "build": "parcel build ./src/main.ts --no-optimize"
+    "build": "parcel build --no-optimize"
   },
   "author": "ChenQiang",
   "license": "ISC",
@@ -23,7 +26,6 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
-  "type": "module",
   "keywords": [
     "typescript",
     "vue",
