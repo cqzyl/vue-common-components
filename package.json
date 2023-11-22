@@ -2,15 +2,18 @@
   "name": "vue-common-components",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/main.js",
+  "default": "dist/main.js",
   "types": "dist/main.d.ts",
   "source": "src/main.ts",
-  "files": [
-    "dist"
-  ],
+  "type": "module",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
   "scripts": {
-    "serve": "parcel ./test/index.html --dist-dir .parcel-cache",
-    "build": "parcel build --no-optimize"
+    "serve": "parcel ./test/index.html --no-hmr --dist-dir .parcel-cache",
+    "build": "parcel build --no-optimize --no-content-hash"
   },
   "author": "ChenQiang",
   "license": "ISC",

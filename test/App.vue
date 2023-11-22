@@ -2,7 +2,7 @@
  * @Author: ChenQiang
  * @Date: 2023-11-20 09:51:53
  * @LastEditors: ChenQiang
- * @LastEditTime: 2023-11-22 09:21:43
+ * @LastEditTime: 2023-11-22 17:24:23
  * @FilePath: \test\App.vue
 -->
 <template>
@@ -19,10 +19,10 @@
   </KeepAliveC>
 </template>
 
-<script setup>
+<script lang="ts" setup>
 import { ref } from 'vue'
 import test from './test.vue';
-import { KeepAliveC } from '../src';
+import { KeepAliveC } from '../src/index';
 
 const value = ref('1')
 </script>

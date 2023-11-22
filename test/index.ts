@@ -6,6 +6,8 @@
  * @LastEditTime: 2023-11-20 09:53:09
  * @FilePath: \src\index.ts
  */
+/// <reference path="../src/shims-vue.d.ts"/>
+
 import { createApp } from 'vue'
 import App from './App.vue'
 
