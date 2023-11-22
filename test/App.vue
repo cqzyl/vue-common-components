@@ -2,8 +2,8 @@
  * @Author: ChenQiang
  * @Date: 2023-11-20 09:51:53
  * @LastEditors: ChenQiang
- * @LastEditTime: 2023-11-21 15:10:50
- * @FilePath: \src\App.vue
+ * @LastEditTime: 2023-11-22 09:21:43
+ * @FilePath: \test\App.vue
 -->
 <template>
   <div>测试</div>
@@ -22,7 +22,7 @@
 <script setup>
 import { ref } from 'vue'
 import test from './test.vue';
-import { KeepAliveC } from './components';
+import { KeepAliveC } from '../src';
 
 const value = ref('1')
 </script>

@@ -3,7 +3,7 @@
  * @Author: ChenQiang
  * @Date: 2021-12-24 10:43:55
  * @LastEditors: ChenQiang
- * @LastEditTime: 2022-02-15 11:04:50
+ * @LastEditTime: 2023-11-22 15:05:45
  * @FilePath: \src\env.d.ts
  */
 declare module '*.vue' {

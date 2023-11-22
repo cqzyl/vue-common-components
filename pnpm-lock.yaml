@@ -5,14 +5,17 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  stable:
-    specifier: ^0.1.8
-    version: 0.1.8
   vue:
     specifier: ^3.3.8
     version: 3.3.8(typescript@5.2.2)
 
 devDependencies:
+  '@parcel/packager-ts':
+    specifier: 2.10.3
+    version: 2.10.3(@parcel/core@2.10.3)
+  '@parcel/transformer-typescript-types':
+    specifier: 2.10.3
+    version: 2.10.3(@parcel/core@2.10.3)(typescript@5.2.2)
   '@parcel/transformer-vue':
     specifier: 2.10.3
     version: 2.10.3(@parcel/core@2.10.3)
@@ -575,6 +578,15 @@ packages:
       - '@parcel/core'
     dev: true
 
+  /@parcel/packager-ts@2.10.3(@parcel/core@2.10.3):
+    resolution: {integrity: sha512-15IQNe6H/zb1R6Ds8+hu+OLFFPW6QWYpPXlTuhaFDAr6ZHa6iCJIK8Lq+n6GnOhuFzS0GZX4N8YU8FjcXXJR9g==}
+    engines: {node: '>= 12.0.0', parcel: ^2.10.3}
+    dependencies:
+      '@parcel/plugin': 2.10.3(@parcel/core@2.10.3)
+    transitivePeerDependencies:
+      - '@parcel/core'
+    dev: true
+
   /@parcel/packager-wasm@2.10.3(@parcel/core@2.10.3):
     resolution: {integrity: sha512-j6VmU84LKy+XRHgZQFoASG98P50a9tkeT3LYRrol3RGGQrvx7PT3/D6rOqbnQjR2iGnaHzYoAlgg9jIMmWXYiA==}
     engines: {node: '>=12.0.0', parcel: ^2.10.3}
@@ -862,6 +874,23 @@ packages:
       - '@parcel/core'
     dev: true
 
+  /@parcel/transformer-typescript-types@2.10.3(@parcel/core@2.10.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-S4XFQAfJJhbpruTNvNVIzE9e+tyfUZ4wnVFhFXv/BeosEnlnve4YrAOzkaSP30RI+dsXHb/pt1QToaYaPMlPhg==}
+    engines: {node: '>= 12.0.0', parcel: ^2.10.3}
+    peerDependencies:
+      typescript: '>=3.0.0'
+    dependencies:
+      '@parcel/diagnostic': 2.10.3
+      '@parcel/plugin': 2.10.3(@parcel/core@2.10.3)
+      '@parcel/source-map': 2.1.1
+      '@parcel/ts-utils': 2.10.3(typescript@5.2.2)
+      '@parcel/utils': 2.10.3
+      nullthrows: 1.1.1
+      typescript: 5.2.2
+    transitivePeerDependencies:
+      - '@parcel/core'
+    dev: true
+
   /@parcel/transformer-vue@2.10.3(@parcel/core@2.10.3):
     resolution: {integrity: sha512-BKIrT+86x09HWn4ap50prZi2LvVtG8f6sNCLoJqqsINofFL+q4BSUMeAiWSp4qrUwQejtURsLQXBHEMUzAkOpA==}
     engines: {node: '>= 12.0.0', parcel: ^2.10.3}
@@ -929,6 +958,16 @@ packages:
       - velocityjs
       - walrus
       - whiskers
+    dev: true
+
+  /@parcel/ts-utils@2.10.3(typescript@5.2.2):
+    resolution: {integrity: sha512-DkYs9C/BOY8pw7clzKltVY1biGcte3KAaq1u6KQkzLbPudjtl8fzk/SMRGKjYSm0gjqc/TiK87PwWWNQZtz8mw==}
+    engines: {node: '>= 12.0.0'}
+    peerDependencies:
+      typescript: '>=3.0.0'
+    dependencies:
+      nullthrows: 1.1.1
+      typescript: 5.2.2
     dev: true
 
   /@parcel/types@2.10.3(@parcel/core@2.10.3):
@@ -2435,6 +2474,7 @@ packages:
   /stable@0.1.8:
     resolution: {integrity: sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==}
     deprecated: 'Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility'
+    dev: true
 
   /string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
