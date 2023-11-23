@@ -1,6 +1,6 @@
 {
   "name": "vue-common-components-c",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "default": "src/main.ts",
   "source": "src/main.ts",
