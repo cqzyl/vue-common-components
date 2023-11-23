@@ -1,8 +1,8 @@
 {
   "name": "vue-common-components-c",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "default": "dist/main.js",
+  "default": "src/main.js",
   "types": "dist/main.d.ts",
   "source": "src/main.ts",
   "type": "module",

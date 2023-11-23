@@ -25,7 +25,6 @@ if (typeof window !== 'undefined' && (window as any).Vue) {
 }
 export {
   KeepAliveC,
-  KeepAliveC as KeepAliveA,
   install
 };
 export default { version, install };
